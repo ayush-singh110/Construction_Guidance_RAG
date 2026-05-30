@@ -3,3 +3,5 @@ python-dotenv
 langchain_groq
 langchain_community
 langchain_text_splitters
+langchain_classic
+pymupdf
