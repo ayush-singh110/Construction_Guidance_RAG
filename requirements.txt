@@ -7,3 +7,4 @@ langchain_classic
 pymupdf
 langchain_huggingface
 sentence-transformers
+faiss-cpu
