@@ -1,0 +1,4 @@
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+#answerText { font-size: 0.95rem; }
+.card { border: none; }
+.navbar-brand { font-weight: 700; }

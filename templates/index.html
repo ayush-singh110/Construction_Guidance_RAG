@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Construction RAG — Building Code Advisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Your Pocket Code Advisor</a>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Ask the Building Code Advisor</h3>
+
+              <div class="mb-4">
+                <textarea id="question" class="form-control form-control-lg" rows="4" placeholder="E.g. What are the fire exit requirements?"></textarea>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button id="askBtn" class="btn btn-primary btn-lg">Ask</button>
+                <button id="clearBtn" class="btn btn-outline-secondary btn-lg">Clear</button>
+              </div>
+
+              <hr>
+
+              <div id="answerCard" class="d-none">
+                <h5>Answer</h5>
+                <pre id="answerText" class="p-3 bg-white border rounded" style="white-space:pre-wrap;"></pre>
+                <div class="mt-2 text-muted small">Source: <span id="sourceHint">NBC 2016</span></div>
+              </div>
+
+              <div id="loading" class="d-none mt-3"> 
+                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                <span class="ms-2">Thinking...</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="text-center text-muted mt-3">Made by Ayush Singh</div>
+          <div class="text-center text-muted small">All info as per government norms.</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
